@@ -127,7 +127,7 @@ html {
   
   } */
   /* カーソル合わせた時にゆっくりと下線を表示 */
-  a::after {
+  .navigation-header a::after {
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -139,7 +139,7 @@ html {
     visibility: hidden;
     transition: .3s;
   }
-  a:hover::after {
+  .navigation-header a:hover::after {
     bottom: -3px;
     opacity: 1;
     visibility: visible;
