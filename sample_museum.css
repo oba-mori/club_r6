@@ -1,0 +1,162 @@
+/* top */
+/*--------------------------------------------------------------------*/
+/* 現在ページ表示用 */
+/* 列挙 */
+.icon-museum::before {
+  display: block;  /*ブロックで表示*/
+
+  content: '\f03e';
+  font-weight: 900;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+/* メイン */
+main {
+  height: 1500px;
+  /* background-color: rgb(237, 255, 255); */
+}
+
+
+
+/* 文章纏め */
+.museum-string {
+  height: auto;
+  margin: 0 auto;   /*中央寄せ*/
+  
+  /*上下内部余白*/
+  padding: 2rem 0; 
+
+  /* ページ全体の背景色 */
+  /*background-color: rgb(247, 255, 249);*/
+}
+/* タイトル */
+.museum-ttl{
+  font-size: 4rem;
+  font-weight: bold;  /* 太字 */
+  /* margin-bottom: 3rem; */
+  text-align: center; /* テキスト位置 中央 */
+}
+
+/* 文章 */
+.museum-stc{
+  font-size: 1.7rem;
+  text-align: center; /* テキスト位置 中央 */
+}
+
+
+
+
+
+
+/* 画像配置 */
+/* 纏めクラス */
+.c-0 {
+  display: flex;    
+  flex-wrap: wrap; /* 折返し指定 */
+  box-sizing: border-box;
+
+  /* 子要素がpaddingで1remとっているため、間が2remになる。外空白も2remとりたいから補填用のmarginを設ける */
+  margin: 1rem;
+}
+/* 個数を選択して折り返し(例：(100％ / 4個)) */
+/* .c-0 div {
+  width: calc(100% / 4) ;
+} */
+/* 画像要素まとめて設定 */
+.c-0-0 {
+  box-sizing: border-box;
+
+  /* 画像の間に空白を入れたいから */
+  padding: 1rem;
+
+  margin: 0;
+
+  /* アスペクト比固定 */
+  aspect-ratio: 1 / 1;
+
+  /* background-color: rgb(212, 253, 253);   */
+}
+/* 画像要素個別設定 */
+.c-0-0[data-name="i-0"] {
+
+  /* background-color: rgb(255, 237, 237); */
+}
+.c-0-0[data-name="i-1"] {
+
+  /* background-color: rgb(238, 255, 234); */
+}
+.c-0-0[data-name="i-2"] {
+
+  /* background-color: rgb(254, 255, 242); */
+}
+.c-0-0[data-name="i-3"] {
+
+  /* background-color: rgb(237, 241, 255); */
+}
+/* 画像要素個別設定 */
+.c-0-0[data-name="i-4"] {
+
+  /* background-color: rgb(255, 237, 237); */
+}
+.c-0-0[data-name="i-5"] {
+
+  /* background-color: rgb(238, 255, 234); */
+}
+.c-0-0[data-name="i-6"] {
+
+  /* background-color: rgb(254, 255, 242); */
+}
+.c-0-0[data-name="i-7"] {
+
+  /* background-color: rgb(237, 241, 255); */
+}
+
+
+/* 画像大きさ調整 */
+.c-0-0 img{
+  /* 余白を消すため */
+  display: block;
+
+  /* 画像を要素の全体に表示する */
+  width: 100%;
+  height: 100%;
+
+  /* はみ出した所をトリミング */
+  object-fit: cover;  
+}
+
+
+
+/* -------------------------------------------------------------------- */
+/* 横長(タッチ操作不可)デバイス */
+/* PC */
+
+@media screen and (min-width: 801px){
+/* @media screen and (any-hover: hover){ */
+  /* 個数を選択して折り返し(例：(100％ / 4個)) */
+  .c-0 div {
+    width: calc(100% / 4) ;    
+  }
+  
+
+}/* 終 */
+  
+  
+/* -------------------------------------------------------------------- */
+/* 縦長(タッチ操作可能)デバイス */
+/* タブレット、スマホ */
+
+@media screen and (max-width: 800px){ 
+/* @media screen and (any-hover: none){ */
+  /* 個数を選択して折り返し(例：(100％ / 2個)) */
+  .c-0 div {
+    width: calc(100% / 2) ;
+  }
+
+}/* 終 */
+    
+  
+  

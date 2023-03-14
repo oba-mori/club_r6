@@ -1,0 +1,215 @@
+<!-- 
+r0:メニューをボトムナビゲーションに変更
+
+参考：
+-->
+
+
+<!DOCTYPE html>
+<html lang="ja">  <!-- 日本語のページだと宣言(翻訳しますか？のメッセージを表示させないようにするため) -->
+  <head>
+
+    <!-- 日本語のページだと宣言(翻訳しますか？のメッセージを表示させないようにするため) -->
+    <!-- 上でも対処しているが、念のためここでも行う -->
+    <meta http-equiv="content-language" content="ja">
+
+    <!-- ビューポートを設定
+    レスポンシブデザインに必要
+
+    Googleは、現時点でこちらの記述を推奨しています。表示領域の幅を指定する方法もありますが、現在は端末画面の幅に合わせることを推奨しています。
+    「width=device-width」を記述することで、表示領域の幅を、PCやスマホなどの端末画面の幅に合わせられます。
+    また、「initial-scale=1」は初期のズーム倍率を表します。1に設定することで、初めに表示された時の違和感をなくします。
+    これらの設定にすることで、どのデバイスでも表示領域が合わせられ、ズームの倍率もページ全てが見える癖のない初期ズーム倍率になります。
+    したがって、この記述が一番問題が起こりにくい、最新の内容と言えます。
+
+    参考：https://gmotech.jp/semlabo/seo/blog/howto-viewport/
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!-- 文字化け防止 -->
+    <meta charset="utf-8">
+
+    <!-- ページ名 -->
+    <title>club_about</title>
+
+    <!-- Robotoフォント導入のため、データを読み込む -->
+    <!-- 参考：https://plu-plu.net/post-740/ -->
+    <!-- 100,200,...というのは、font-weightで選べる太さの数値 これを設定しておかないとcssで太さの変更が出来ない -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
+    
+    <!-- 元サイトのRobotoデータファイル読み込みコード -->
+    <!-- <link as="style" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&amp;family=Roboto+Slab:wght@400;700&amp;family=Space+Mono&amp;display=swap" rel="preload"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&amp;family=Roboto+Slab:wght@400;700&amp;family=Space+Mono&amp;display=swap" media="all" onload="this.media=&quot;all&quot;" rel="stylesheet"> -->
+
+    <!-- フォント Note Sans Japaneze 導入-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+
+
+    <!-- CSS読み込み -->
+    <!-- 初期レイアウト設定 -->
+    <link rel="stylesheet" href="./setting.css">
+    <!-- メインレイアウト -->
+    <link rel="stylesheet" href="./sample_about.css">
+
+    <!-- JSファイル読み込み -->
+    <!-- 100VWにスクロールバーを含めない用の計算ファイル -->
+    <script src="vw.js"></script>
+
+
+    <!-- ボトムナビゲーション用アイコンリンク(font awesome) -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  </head>
+
+
+  
+
+
+
+
+  <!-- -------------------------------------------------------------------- -->
+  <!-- bodyタグ -->
+  <body>
+    <!-- ヘッダー、メイン、フッターを並べるクラス -->
+    <div class="wrapper">
+
+      <!-- ヘッダー -->
+      <header>
+        <!-- ナビゲーションバー -->
+        <nav class="navigation-header">
+          <!-- 順序がないリスト(箇条書き) -->
+          <ul>
+            <!-- トップ -->
+            <li class="ber_top">
+              <a href="./index.html">
+                TOP
+              </a>
+            </li>
+
+            
+            <!-- 概要 -->
+            <li class="ber_about">
+              <a href="./index_about.html">
+                ABOUT
+              </a>
+            </li>
+
+            
+            <!-- 美術館 -->
+            <li class="ber_museum">
+              <a href="./index_museum.html">
+                RANGE
+              </a>
+            </li>
+
+
+            <!-- 投稿フォーム -->
+            <li class="ber_post">
+              <a href="./index_post.html">
+                POST
+              </a>
+            </li>
+          </ul>      
+        </nav>
+      </header>
+
+
+      <!-- -------------------------------------------------------------------- -->  
+      <!-- メイン -->
+      <main>
+        <!-- 祖親クラス -->
+        <div class="g_0">
+          <p>
+            p0
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            p1
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            p2
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            p3
+          </p>
+        </div>
+      </main>
+
+
+      <!-- -------------------------------------------------------------------- -->
+      <!-- フッター -->
+      <footer>
+        <!-- ボトムナビゲーション -->
+        <div class="navigation-footer">
+          <!-- 全てのメニューボタン -->
+          <ul>
+            <!-- ホームボタン -->
+            <li>
+              <!-- URL -->
+              <a href="./index.html">
+                <!-- アイコン(font awesomeリンクの中のアイコンを指定) -->
+                <!-- 黒塗り -->
+                <!-- <i class="fa-solid fa-circle"></i> -->
+                <!-- <i class="fa-regular fa-circle"></i> -->
+                <!-- Unicode で指定するときはfar fasをクラス名の前に付ける -->
+                <i class="far icon-top"></i>
+                <br>
+                <!-- 文字 -->
+                トップ
+              </a>
+            </li>
+
+            <!-- 概要ボタン -->
+            <li>
+              <!-- URL -->
+              <a href="./index_about.html">
+                <!-- アイコン(font awesomeリンクの中のアイコンを指定) -->
+                <!-- 黒塗り<i class="fa-solid fa-file"></i> -->
+                <!-- <i class="fa-regular fa-file"></i> -->
+                <i class="far icon-about"></i>
+                <br>
+                <!-- 文字 -->
+                概要
+              </a>
+            </li>
+
+            <!-- 列挙ボタン -->
+            <li>
+              <!-- URL -->
+              <a href="./index_museum.html">
+                <!-- アイコン(font awesomeリンクの中のアイコンを指定) -->
+                <!-- 黒塗り<i class="fa-solid fa-image"></i> -->
+                <!-- <i class="fa-regular fa-image"></i> -->
+                <i class="far icon-museum"></i>
+                <br>
+                <!-- 文字 -->
+                列挙
+              </a>
+            </li>
+            
+            <!-- 問い合わせフォームボタン -->
+            <li>
+              <!-- URL -->
+              <a href="./index_post.html">
+                <!-- アイコン(font awesomeリンクの中のアイコンを指定) -->
+                <!-- 黒塗り<i class="fa-solid fa-envelope"></i> -->
+                <!-- <i class="fa-regular fa-envelope"></i> -->
+                <i class="far icon-post"></i>
+                <br>
+                <!-- 文字 -->
+                問い合わせ
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+
+
+  
+  
+  
+  
+
+

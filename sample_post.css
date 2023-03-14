@@ -1,0 +1,162 @@
+/* post */
+/*--------------------------------------------------------------------*/
+/* 現在ページ表示用 */
+/* 問い合わせ */
+.icon-post::before {
+  display: block;  /*ブロックで表示*/
+
+  content: '\f0e0';
+  font-weight: 900;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+/* -------------------------------------------------------------------- */
+
+
+
+/* 纏めクラス */
+.post {
+  width: min(90%, 90rem); /*基本値, 最大値*/
+  height: 60rem;
+  margin: 0 auto;   /*中央寄せ*/
+  padding: 2rem 0;  /*上下内部余白*/
+
+  /* ページ全体の背景色 */
+  /*background-color: rgb(247, 255, 249);*/
+}
+
+
+
+/* タイトル */
+.post-ttl{
+  font-size: 4rem;
+  font-weight: bold;  /* 太字 */
+  margin: 3rem auto;
+  text-align: center; /* テキスト位置 中央 */
+}
+
+/* 文章 */
+.post-stc{
+  font-size: 1.7rem;
+  text-align: center; /* テキスト位置 中央 */
+  margin-bottom: 3rem;
+}
+
+
+
+/* -------------------------------------------------------------------- */
+/* フォームテーブル */
+.post-table{
+  margin-bottom: 2rem;
+
+  width: 100%;
+  table-layout: fixed;
+  word-break: break-all;
+  word-wrap: break-all;
+}
+/* フォームテーブル内の要素(カテゴリ欄、入力欄) */
+.post-item,
+.post-body {
+  padding: 2rem;            /* 欄内の高さ */
+  border: 0.1rem solid #ccc; /* 枠線色 */
+  border-radius: 0.2rem; /* 角丸指定 */
+}
+
+.post-item {
+  /*text-align: left; /* テキスト左寄せ */
+  text-align: center; /* テキスト中央揃え */
+  width: 20%; /* 横幅30%指定（グレーの背景色部分） */
+  background-color: #eee; /* グレーの背景色 */
+}
+
+.post-body {
+  width: 80%; /* 横幅70%指定（白背景色部分） */
+  background-color: rgb(253, 253, 253); /* グレーの背景色 */
+}
+
+
+/* フォームの文字 */
+.form-text {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* width: clamp(20rem, calc(var(--vw) * 40), 90%); */
+}
+
+
+/* 2行目 */
+/* チェックボックス 全て */
+.post-tag {
+  display: block; /* 縦並び用 */
+}
+
+/* チェックボックス間の間隔 */
+.post-tag + .post-tag {
+  margin-top: 1rem;
+}
+
+/* チェックボックス横の文字 */
+.post-tag-txt {
+  margin-left: 0.5rem; /* 文字の左側に余白(チェックボックスと文字の間に間隔を設ける) */
+}
+
+/* チェックボックス その他の記入欄 */
+/* 全てのtextareaの設定 */
+.form-textarea {
+  /*display: block; /* その他のチェックボックスの下に表示させたいため */ 
+
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 0.1rem solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* チェックボックス その他の記入欄 */
+/** チェックOFFなら非表示 */
+.form-textarea {
+  display: none;
+}
+/** チェックONなら表示 */
+input:checked ~ .form-textarea{
+  display: block;
+}
+
+
+
+
+
+/* 送信ボタン */
+.post-submit {
+  width: 20rem; /* 横幅指定 */
+  background-color: #333; /* 背景色 */
+  color: #fff; /* 文字色 */
+  font-weight: bold; /* 文字の太さ */
+  display: block; /* インライン要素をブロック要素に変更 */
+
+  margin-top: 4rem;   /*上余白*/
+  margin-left: auto;  /* 中央寄せ */
+  margin-right: auto; /* 中央寄せ */
+
+  font-size: 1.6rem; /* 文字の大きさ */
+  padding: 1.5rem; /* 内側の余白 */
+  border-radius: 20rem; /* 角丸指定 */
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+
+
+
