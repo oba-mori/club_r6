@@ -114,6 +114,11 @@ main {
   /* background-color: rgb(237, 241, 255); */
 }
 
+.c-0-0-a::after{
+  display: none;
+}
+
+
 
 /* 画像大きさ調整 */
 .c-0-0 img{
