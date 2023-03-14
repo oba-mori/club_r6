@@ -63,17 +63,24 @@
   padding: 2rem;            /* 欄内の高さ */
   border: 0.1rem solid #ccc; /* 枠線色 */
   border-radius: 0.2rem; /* 角丸指定 */
+  font-size: clamp(1.4rem,2vw,2rem);
+}
+.post-item {
+  
+  text-align: center; /* テキスト中央揃え */
+  width:  20%; /* 横幅30%指定（グレーの背景色部分） */
+  background-color: #eee; /* グレーの背景色 */
+  
+}
+th.post-item{
+  white-space: nowrap;
+  
 }
 
-.post-item {
-  /*text-align: left; /* テキスト左寄せ */
-  text-align: center; /* テキスト中央揃え */
-  width: 20%; /* 横幅30%指定（グレーの背景色部分） */
-  background-color: #eee; /* グレーの背景色 */
-}
 
 .post-body {
-  width: 80%; /* 横幅70%指定（白背景色部分） */
+  /* 横幅70%指定（白背景色部分） */
+  /* width: 70%;  */
   background-color: rgb(253, 253, 253); /* グレーの背景色 */
 }
 
